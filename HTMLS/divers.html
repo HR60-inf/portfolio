@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Activités en dehors de l'alternance – Ismael RAHALI">
+  <title>Activités – Informa Tech – Ismael RAHALI</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/subpage.css">
+  <style>
+    .social-platform-grid {
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      gap: 1.4rem;
+      margin-top: 1.5rem;
+      justify-items: center;
+    }
+    .platform-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 18px;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      text-decoration: none;
+      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    }
+    .platform-card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 12px 32px rgba(124,77,255,0.3);
+      border-color: var(--primary);
+    }
+    .platform-card img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.08);
+      padding: 6px;
+      transition: transform 0.3s;
+    }
+    .platform-card:hover img { transform: scale(1.12); }
+    .platform-card span {
+      display: block;
+      margin-top: 0.6rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--secondary);
+    }
+    @media(max-width:700px){ .social-platform-grid { grid-template-columns: repeat(3,1fr); } }
+    @media(max-width:420px){ .social-platform-grid { grid-template-columns: repeat(2,1fr); } }
+  </style>
+</head>
+<body>
+
+  <a href="../index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Retour au portfolio</a>
+
+  <main>
+    <div class="page-header" data-aos="fade-down">
+      <h1 class="gradient-text">En dehors de l'alternance</h1>
+      <p class="subtitle">Création de contenu · Cybersécurité · Informa Tech</p>
+    </div>
+
+    <!-- Bannière -->
+    <div class="page-banner" data-aos="fade-up">
+      <h1><i class="fas fa-play-circle" style="color:var(--secondary);"></i> Informa Tech</h1>
+      <p>En dehors de mon alternance, je suis actif dans la <strong>création de contenu en ligne</strong> sous la bannière <em>Informa Tech</em> — partageant des connaissances en informatique, des tutoriels et des conseils en cybersécurité.</p>
+      <div>
+        <span class="badge badge-primary"><i class="fab fa-youtube"></i> YouTube</span>
+        <span class="badge badge-green" style="margin-left:8px;"><i class="fab fa-tiktok"></i> TikTok</span>
+        <span class="badge badge-accent" style="margin-left:8px;"><i class="fas fa-shield-alt"></i> Cybersécurité</span>
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div class="content-card" data-aos="fade-up">
+      <h2><i class="fas fa-video"></i> Création de Contenu en Ligne</h2>
+      <p>Je consacre une partie de mon temps à la création de contenu, partageant mes connaissances et mon expérience avec une communauté toujours grandissante. Mon contenu couvre un large éventail de sujets : astuces pratiques pour la vie quotidienne, tutoriels détaillés, et conseils sur la <strong>sécurité informatique</strong> — un domaine crucial à l'ère du numérique.</p>
+      <p>Je m'efforce de rester à jour sur les dernières avancées technologiques et les tendances émergentes, ce qui me permet d'offrir des informations pertinentes et actuelles. Que ce soit à travers des vidéos, des articles ou des publications sur les réseaux sociaux, mon objectif est de rendre les nouvelles technologies <strong>accessibles à tous</strong>, tout en sensibilisant aux bonnes pratiques en matière de sécurité en ligne.</p>
+    </div>
+
+    <div class="content-card" data-aos="fade-up">
+      <h2><i class="fas fa-graduation-cap"></i> Apprentissage Continu</h2>
+      <p>En plus de ces activités, je m'intéresse à l'<strong>apprentissage continu</strong>, en suivant des cours en ligne et en lisant des ouvrages sur les nouvelles technologies et la cybersécurité. Cela m'aide à rester à jour dans un domaine en constante évolution.</p>
+      <p>J'expérimente également avec de nouvelles compétences — programmation, analyse de données, forensics — qui me permettent d'approfondir ma compréhension des systèmes numériques et d'apporter de la valeur à ce que je crée.</p>
+    </div>
+
+    <!-- Plateformes -->
+    <h2 class="section-title" data-aos="fade-up"><i class="fas fa-share-alt"></i> Retrouvez-moi sur</h2>
+    <div class="social-platform-grid" data-aos="fade-up">
+      <a href="https://youtube.com/@informa-tech188" target="_blank" class="platform-card">
+        <img src="../imgs/yout.png" alt="YouTube">
+        <span>@informa-tech188</span>
+      </a>
+      <a href="https://www.tiktok.com/@informa_tech188" target="_blank" class="platform-card">
+        <img src="../imgs/Tik-Icon.png" alt="TikTok">
+        <span>@informa_tech188</span>
+      </a>
+      <a href="https://www.facebook.com/share/1BJXJMpZcp/" target="_blank" class="platform-card">
+        <img src="../imgs/face-icon.png" alt="Facebook">
+        <span>Facebook</span>
+      </a>
+      <a href="https://www.instagram.com/informa_technique_r" target="_blank" class="platform-card">
+        <img src="../imgs/instagram-util.png" alt="Instagram">
+        <span>@informa_technique_r</span>
+      </a>
+      <a href="https://www.yoursite.com" target="_blank" class="platform-card">
+        <img src="../imgs/web.png" alt="Site Web">
+        <span>Site Web</span>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ismael RAHALI. Tous droits réservés.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100008112765174" target="_blank" class="fab fa-facebook"></a>
+      <a href="https://twitter.com/RahaliSoilihi" target="_blank" class="x-img-link"><img src="../imgs/X.png" alt="X"></a>
+      <a href="https://www.linkedin.com/in/rh188/" target="_blank" class="fab fa-linkedin"></a>
+      <a href="https://www.instagram.com/rahalismael/" target="_blank" class="fab fa-instagram"></a>
+      <a href="https://github.com/rh188" target="_blank" class="fab fa-github"></a>
+      <a class="fas fa-address-book" id="contactIcon"></a>
+    </div>
+  </footer>
+
+  <div id="formulairePopup">
+    <div class="Entete"><i class="fas fa-envelope"></i>&nbsp; Me contacter – Cliquez pour déplacer</div>
+    <div class="content">
+      <form autocomplete="off">
+        <label>Prénom ou Société</label>
+        <input type="text" name="prenom" placeholder="Votre nom..." required>
+        <label>Téléphone</label>
+        <input type="text" name="numero" placeholder="+33 6 xx xx xx xx">
+        <label>Adresse Email</label>
+        <input type="email" name="email" placeholder="email@exemple.fr" required>
+        <label>Message</label>
+        <textarea name="message" rows="4" placeholder="Votre message..." required></textarea>
+        <input type="submit" value="Envoyer le message">
+      </form>
+      <button id="closePopup"><i class="fas fa-times"></i> Fermer</button>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../JS/subpage.js"></script>
+</body>
+</html>

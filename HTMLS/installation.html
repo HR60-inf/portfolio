@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Installation des équipements – Alternance – Ismael RAHALI">
+  <title>Installation des équipements</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/subpage.css">
+  <style>
+    .equip-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+      justify-items: center;
+    }
+    .equip-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 1.2rem;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+      cursor: default;
+    }
+    .equip-card:hover {
+      transform: translateY(-8px) scale(1.04);
+      box-shadow: 0 10px 30px rgba(124,77,255,0.3);
+      border-color: var(--primary);
+    }
+    .equip-card img {
+      max-width: 100px;
+      max-height: 90px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
+      transition: transform 0.3s;
+    }
+    .equip-card:hover img { transform: scale(1.1); }
+    .equip-card p {
+      margin-top: 0.7rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+    @media(max-width:700px){ .equip-grid { grid-template-columns: repeat(2,1fr); } }
+  </style>
+</head>
+<body>
+
+  <a href="../index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Retour au portfolio</a>
+
+  <main>
+    <div class="page-header" data-aos="fade-down">
+      <h1 class="gradient-text">Installation des Équipements</h1>
+      <p class="subtitle">Missions techniques – Alternance BTS SIO · Koesio Centre Est</p>
+    </div>
+
+    <!-- 4 blocs d'installation -->
+    <div class="two-col" data-aos="fade-up">
+      <div class="content-card">
+        <h2><i class="fas fa-hdd"></i> Mise en place du NAS</h2>
+        <ul class="styled-list">
+          <li>Création des utilisateurs et gestion des <strong>droits d'accès</strong></li>
+          <li>Mise en place des dossiers partagés nécessaires pour chaque service ou usage</li>
+          <li>Configuration de la <strong>sauvegarde régulière</strong> des postes clients et serveurs</li>
+          <li>Mise en place d'une sauvegarde des données <strong>Microsoft 365</strong> si nécessaire</li>
+        </ul>
+      </div>
+      <div class="content-card">
+        <h2><i class="fas fa-fire-alt"></i> Mise en place du Pare-feu</h2>
+        <ul class="styled-list">
+          <li>Paramétrage via <strong>PPPoE</strong> (Point-to-Point Protocol over Ethernet)</li>
+          <li>Ou intégration sur le réseau LAN de la box avec configuration de la <strong>DMZ</strong></li>
+          <li>Connexion de tous les équipements réseau au pare-feu (PC, copieurs, imprimantes…)</li>
+          <li>Ouverture des ports selon les besoins clients : caméras, alarmes, logiciels métiers…</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="two-col" data-aos="fade-up">
+      <div class="content-card">
+        <h2><i class="fas fa-server"></i> Mise en place Serveur & PC</h2>
+        <ul class="styled-list">
+          <li><strong>Migration complète</strong> depuis l'ancien serveur : récupération des données et services essentiels</li>
+          <li>Sécurisation du serveur : scripts d'automatisation, <strong>GPO</strong> (Group Policy Objects)…</li>
+          <li>Une fois la migration validée, décommissionnement de l'ancien matériel</li>
+          <li>Mise à jour de l'OS et configurations spécifiques selon les besoins</li>
+          <li><em>Pour les PC :</em> Récupération des données utilisateurs</li>
+          <li>Réinstallation des logiciels métiers nécessaires</li>
+          <li>Reconfiguration : impression, scan, connexion aux lecteurs réseau</li>
+          <li>Tests finaux pour vérifier le bon fonctionnement</li>
+        </ul>
+      </div>
+      <div class="content-card">
+        <h2><i class="fas fa-phone-alt"></i> Mise en place Téléphones & Switch</h2>
+        <ul class="styled-list">
+          <li>Installation et mise en place des téléphones sur chaque bureau</li>
+          <li>Formation des utilisateurs finaux : explication des fonctionnalités principales</li>
+          <li>Configuration personnalisée selon les préférences des utilisateurs</li>
+          <li><em>Pour le Switch :</em> Installation dans la baie réseau</li>
+          <li>Remise au propre complète du câblage pour garantir un réseau bien organisé</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Équipements -->
+    <h2 class="section-title" data-aos="fade-up"><i class="fas fa-tools"></i> Équipements utilisés</h2>
+    <div class="equip-grid" data-aos="fade-up">
+      <div class="equip-card">
+        <img src="../imgs/heading.png" alt="NAS Synology">
+        <p>NAS Synology</p>
+      </div>
+      <div class="equip-card">
+        <img src="../imgs/overview-tabletop-NV5_0.png" alt="WatchGuard">
+        <p>WatchGuard (Pare-feu)</p>
+      </div>
+      <div class="equip-card">
+        <img src="../imgs/HP.webp" alt="Serveur HP">
+        <p>Serveur HP</p>
+      </div>
+      <div class="equip-card">
+        <img src="../imgs/Yeah.png" alt="Téléphone Yealink">
+        <p>Téléphone Yealink</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ismael RAHALI. Tous droits réservés.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100008112765174" target="_blank" class="fab fa-facebook"></a>
+      <a href="https://twitter.com/RahaliSoilihi" target="_blank" class="x-img-link"><img src="../imgs/X.png" alt="X"></a>
+      <a href="https://www.linkedin.com/in/rh188/" target="_blank" class="fab fa-linkedin"></a>
+      <a href="https://www.instagram.com/rahalismael/" target="_blank" class="fab fa-instagram"></a>
+      <a href="https://github.com/rh188" target="_blank" class="fab fa-github"></a>
+      <a class="fas fa-address-book" id="contactIcon"></a>
+    </div>
+  </footer>
+
+  <div id="formulairePopup">
+    <div class="Entete"><i class="fas fa-envelope"></i>&nbsp; Me contacter – Cliquez pour déplacer</div>
+    <div class="content">
+      <form autocomplete="off">
+        <label>Prénom ou Société</label>
+        <input type="text" name="prenom" placeholder="Votre nom..." required>
+        <label>Téléphone</label>
+        <input type="text" name="numero" placeholder="+33 6 xx xx xx xx">
+        <label>Adresse Email</label>
+        <input type="email" name="email" placeholder="email@exemple.fr" required>
+        <label>Message</label>
+        <textarea name="message" rows="4" placeholder="Votre message..." required></textarea>
+        <input type="submit" value="Envoyer le message">
+      </form>
+      <button id="closePopup"><i class="fas fa-times"></i> Fermer</button>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../JS/subpage.js"></script>
+</body>
+</html>

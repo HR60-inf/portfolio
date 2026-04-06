@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formation Avant de Cliquer – Sensibilisation au Phishing – Ismael RAHALI">
+  <title>Avant de Cliquer – Sensibilisation Phishing</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/subpage.css">
+  <style>
+    .phishing-layout {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      margin-top: 1.5rem;
+    }
+    .phishing-img {
+      flex-shrink: 0;
+      width: 260px;
+    }
+    .phishing-img img {
+      width: 100%;
+      border-radius: 18px;
+      object-fit: cover;
+      filter: drop-shadow(0 6px 18px rgba(0,230,118,0.3));
+      border: 1px solid rgba(0,230,118,0.3);
+      transition: transform 0.3s;
+    }
+    .phishing-img img:hover { transform: scale(1.04); }
+    .phishing-center { flex: 1; }
+    .warn-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(213,245,28,0.35);
+      border-radius: 18px;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .warn-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 4px; height: 100%;
+      background: var(--accent);
+      border-radius: 4px 0 0 4px;
+    }
+    .warn-card h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .warn-card p {
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.75;
+    }
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
+    .tip-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 14px;
+      padding: 1.4rem;
+      text-align: center;
+      transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+    }
+    .tip-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--accent);
+      box-shadow: 0 8px 24px rgba(213,245,28,0.2);
+    }
+    .tip-card i {
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 0.8rem;
+      display: block;
+    }
+    .tip-card h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--secondary);
+      margin-bottom: 0.5rem;
+    }
+    .tip-card p {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.5;
+    }
+    @media(max-width:900px){ .phishing-layout { flex-direction: column; } .phishing-img { width: 100%; max-width: 320px; margin: 0 auto; } }
+    @media(max-width:650px){ .tips-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <a href="../index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Retour au portfolio</a>
+
+  <main>
+    <div class="page-header" data-aos="fade-down">
+      <h1 class="gradient-text">Formation Avant de Cliquer</h1>
+      <p class="subtitle">Sensibilisation au Phishing · Cybersécurité</p>
+    </div>
+
+    <div class="page-banner" data-aos="fade-up">
+      <h1><i class="fas fa-shield-virus" style="color:var(--accent);"></i> Anti-Phishing</h1>
+      <p><strong>Avant de Cliquer</strong> est une solution de sensibilisation et de test qui aide les organisations de toute taille à se protéger contre l'hameçonnage (phishing) en sensibilisant les utilisateurs sur une durée donnée.</p>
+      <div>
+        <span class="badge badge-accent"><i class="fas fa-exclamation-triangle"></i> Phishing</span>
+        <span class="badge badge-green" style="margin-left:8px;"><i class="fas fa-user-shield"></i> Sensibilisation</span>
+        <span class="badge badge-primary" style="margin-left:8px;"><i class="fas fa-certificate"></i> Attestation</span>
+      </div>
+    </div>
+
+    <!-- Layout principal -->
+    <div class="phishing-layout" data-aos="fade-up">
+      <div class="phishing-img">
+        <img src="../imgs/Clique2.png" alt="Avant de Cliquer – Sensibilisation Phishing">
+      </div>
+      <div class="phishing-center">
+        <div class="warn-card">
+          <h2><i class="fas fa-mouse-pointer"></i> Qu'est-ce qu'Avant de Cliquer ?</h2>
+          <p>
+            <strong>Avant de Cliquer</strong> est une solution de sensibilisation et de test qui aide les organisations de toute taille à se protéger contre l'hameçonnage (phishing) en sensibilisant les utilisateurs sur une durée donnée.
+          </p>
+          <p>
+            L'outil intelligent est envoyé par e-mail. En ayant cliqué sur l'un des liens de l'e-mail, vous êtes redirigé vers un module de sensibilisation de <strong>2 à 3 minutes</strong>, dans le but de vous expliquer ce qui aurait dû attirer votre attention. Une attestation est délivrée une fois la formation terminée.
+          </p>
+          <div class="btn-row" style="margin-top:1.5rem;">
+            <a href="../Documents/attestation-Avant-De-Cliquer.pdf" target="_blank" class="dl-btn dl-btn-primary">
+              <i class="fas fa-file-pdf"></i> Voir l'Attestation
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="phishing-img">
+        <img src="../imgs/Clique2.png" alt="Avant de Cliquer – Formation">
+      </div>
+    </div>
+
+    <!-- Conseils -->
+    <h2 class="section-title" data-aos="fade-up" style="margin-top:3rem;"><i class="fas fa-lightbulb"></i> Bonnes Pratiques Anti-Phishing</h2>
+    <div class="tips-grid" data-aos="fade-up">
+      <div class="tip-card">
+        <i class="fas fa-search"></i>
+        <h4>Vérifier l'expéditeur</h4>
+        <p>Examinez attentivement l'adresse e-mail de l'expéditeur, pas seulement le nom affiché. Les attaquants usurpent souvent des noms connus.</p>
+      </div>
+      <div class="tip-card">
+        <i class="fas fa-link"></i>
+        <h4>Survoler les liens</h4>
+        <p>Avant de cliquer, survolez le lien avec votre souris pour voir l'URL réelle. Elle ne doit pas vous rediriger vers un domaine inconnu.</p>
+      </div>
+      <div class="tip-card">
+        <i class="fas fa-lock"></i>
+        <h4>Vérifier HTTPS</h4>
+        <p>Un site légitime utilise toujours HTTPS. Méfiez-vous des sites HTTP ou des certificats invalides dans votre navigateur.</p>
+      </div>
+      <div class="tip-card">
+        <i class="fas fa-clock"></i>
+        <h4>Résister à l'urgence</h4>
+        <p>Les messages de phishing créent souvent un faux sentiment d'urgence. Prenez le temps de vérifier avant d'agir.</p>
+      </div>
+      <div class="tip-card">
+        <i class="fas fa-paperclip"></i>
+        <h4>Se méfier des pièces jointes</h4>
+        <p>N'ouvrez pas les pièces jointes inattendues, même si elles semblent provenir d'un contact connu. Vérifiez par un autre canal.</p>
+      </div>
+      <div class="tip-card">
+        <i class="fas fa-phone-alt"></i>
+        <h4>Signaler les tentatives</h4>
+        <p>Si vous recevez un e-mail suspect, signalez-le à votre DSI ou à votre responsable sécurité. Ne répondez jamais et ne transférez pas.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ismael RAHALI. Tous droits réservés.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100008112765174" target="_blank" class="fab fa-facebook"></a>
+      <a href="https://twitter.com/RahaliSoilihi" target="_blank" class="x-img-link"><img src="../imgs/X.png" alt="X"></a>
+      <a href="https://www.linkedin.com/in/rh188/" target="_blank" class="fab fa-linkedin"></a>
+      <a href="https://www.instagram.com/rahalismael/" target="_blank" class="fab fa-instagram"></a>
+      <a href="https://github.com/rh188" target="_blank" class="fab fa-github"></a>
+      <a class="fas fa-address-book" id="contactIcon"></a>
+    </div>
+  </footer>
+
+  <div id="formulairePopup">
+    <div class="Entete"><i class="fas fa-envelope"></i>&nbsp; Me contacter – Cliquez pour déplacer</div>
+    <div class="content">
+      <form autocomplete="off">
+        <label>Prénom ou Société</label>
+        <input type="text" name="prenom" placeholder="Votre nom..." required>
+        <label>Téléphone</label>
+        <input type="text" name="numero" placeholder="+33 6 xx xx xx xx">
+        <label>Adresse Email</label>
+        <input type="email" name="email" placeholder="email@exemple.fr" required>
+        <label>Message</label>
+        <textarea name="message" rows="4" placeholder="Votre message..." required></textarea>
+        <input type="submit" value="Envoyer le message">
+      </form>
+      <button id="closePopup"><i class="fas fa-times"></i> Fermer</button>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../JS/subpage.js"></script>
+</body>
+</html>

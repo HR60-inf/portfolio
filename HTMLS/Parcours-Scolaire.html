@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Parcours Scolaire – Ismael RAHALI">
+  <title>Mon Parcours Scolaire – Ismael RAHALI</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/subpage.css">
+  <style>
+    /* Timeline spécifique à cette page */
+    .timeline {
+      position: relative;
+      padding: 1rem 0;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(180deg, var(--primary), var(--secondary));
+      transform: translateX(-50%);
+      border-radius: 3px;
+    }
+
+    .timeline-item {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: calc(50% + 2rem);
+      position: relative;
+      margin-bottom: 2.5rem;
+    }
+
+    .timeline-item.right {
+      justify-content: flex-start;
+      padding-right: 0;
+      padding-left: calc(50% + 2rem);
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: 50%;
+      top: 1.2rem;
+      width: 14px;
+      height: 14px;
+      background: var(--secondary);
+      border: 3px solid var(--primary);
+      border-radius: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      box-shadow: 0 0 10px rgba(0,230,118,0.5);
+    }
+
+    .timeline-dot.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      box-shadow: 0 0 14px rgba(213,245,28,0.8);
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 10px rgba(213,245,28,0.8); }
+      50% { box-shadow: 0 0 22px rgba(213,245,28,1); }
+    }
+
+    .timeline-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 14px;
+      padding: 1rem 1.4rem;
+      max-width: 340px;
+      backdrop-filter: blur(8px);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .timeline-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 28px rgba(124,77,255,0.25);
+      border-color: var(--primary);
+    }
+
+    .timeline-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--secondary);
+      margin-bottom: 0.2rem;
+    }
+
+    .timeline-card .date {
+      font-size: 0.78rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .timeline-card p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.5;
+    }
+
+    @media (max-width: 700px) {
+      .timeline::before { left: 20px; }
+      .timeline-item,
+      .timeline-item.right {
+        padding-left: 56px;
+        padding-right: 0;
+        justify-content: flex-start;
+      }
+      .timeline-dot { left: 20px; }
+      .timeline-card { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="../index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Retour au portfolio</a>
+
+  <main>
+    <div class="page-header" data-aos="fade-down">
+      <h1 class="gradient-text">Mon Parcours Scolaire</h1>
+      <p class="subtitle">De l'Union des Comores à l'EPF École d'Ingénieurs de Troyes</p>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline" data-aos="fade-up">
+
+      <!-- BEPC -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3><i class="fas fa-school"></i> Brevet (BEPC)</h3>
+          <p class="date">2011–2012</p>
+          <p>Obtention du Brevet d'Études du Premier Cycle à l'Union des Comores.</p>
+        </div>
+      </div>
+
+      <!-- BAC -->
+      <div class="timeline-item right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3><i class="fas fa-graduation-cap"></i> Baccalauréat D</h3>
+          <p class="date">2015–2016</p>
+          <p>Baccalauréat scientifique (BAC D) obtenu au Lycée de Wachili, Itsinkoudi Oichili, Grande Comore.</p>
+        </div>
+      </div>
+
+      <!-- L1 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3><i class="fas fa-university"></i> Licence 1 – Sciences Éco.</h3>
+          <p class="date">2016–2017</p>
+          <p>Première année de Licence de Sciences Économiques à l'Université des Comores (FDSE).</p>
+        </div>
+      </div>
+
+      <!-- L2 -->
+      <div class="timeline-item right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3><i class="fas fa-university"></i> Licence 2 – Sciences Éco.</h3>
+          <p class="date">2017–2018</p>
+          <p>Deuxième année de Licence de Sciences Économiques à l'Université des Comores (FDSE).</p>
+        </div>
+      </div>
+
+      <!-- L3 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3><i class="fas fa-university"></i> Licence 3 – Sciences Éco.</h3>
+          <p class="date">2018–2019</p>
+          <p>Troisième année de Licence de Sciences Économiques à l'Université des Comores – FDSE M'Nvouni.</p>
+        </div>
+      </div>
+
+      <!-- American Corner -->
+      <div class="timeline-item right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3><i class="fas fa-flag-usa"></i> American Corner – Anglais B2</h3>
+          <p class="date">2018–2019</p>
+          <p>Formation en langue anglaise au centre <strong>American Corner Moroni</strong>, Grande Comore. Niveau B2 atteint.</p>
+        </div>
+      </div>
+
+      <!-- CNAM Brest -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3><i class="fas fa-comments"></i> CNAM Bretagne – Brest</h3>
+          <p class="date">2020–2021</p>
+          <p>Formation de Commerce, Vente et Marketing au Centre National des Arts et Métiers (CNAM Bretagne). Unités : Communication écrite/orale et Bureautique.</p>
+        </div>
+      </div>
+
+      <!-- DUT IUT Lannion -->
+      <div class="timeline-item right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3><i class="fas fa-network-wired"></i> DUT – IUT Lannion</h3>
+          <p class="date">2021–2022</p>
+          <p>Étudiant en DUT Réseaux et Télécommunications, Université de Rennes 1 – IUT de Lannion.</p>
+        </div>
+      </div>
+
+      <!-- BTS SIO -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3><i class="fas fa-server"></i> BTS SIO – Saint Joseph La Salle</h3>
+          <p class="date">2023–2025</p>
+          <p>BTS Services Informatiques aux Organisations, option SISR, en contrat d'apprentissage. Groupe Saint Joseph La Salle, Troyes.</p>
+        </div>
+      </div>
+
+      <!-- Bachelor EPF -->
+      <div class="timeline-item right">
+        <div class="timeline-dot active"></div>
+        <div class="timeline-card" style="border-color:var(--accent);">
+          <h3><i class="fas fa-shield-alt"></i> Bachelor – EPF Troyes</h3>
+          <p class="date">2025–2026 · <span style="color:var(--accent);">En cours</span></p>
+          <p>Bachelor Systèmes, Réseaux et Cybersécurité à l'<strong>EPF École d'Ingénieurs de Troyes</strong>, en alternance avec l'<strong>Hôpital de Tonnerre</strong>.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ismael RAHALI. Tous droits réservés.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100008112765174" target="_blank" class="fab fa-facebook"></a>
+      <a href="https://twitter.com/RahaliSoilihi" target="_blank" class="x-img-link"><img src="../imgs/X.png" alt="X"></a>
+      <a href="https://www.linkedin.com/in/rh188/" target="_blank" class="fab fa-linkedin"></a>
+      <a href="https://www.instagram.com/rahalismael/" target="_blank" class="fab fa-instagram"></a>
+      <a href="https://github.com/rh188" target="_blank" class="fab fa-github"></a>
+      <a class="fas fa-address-book" id="contactIcon"></a>
+    </div>
+  </footer>
+
+  <div id="formulairePopup">
+    <div class="Entete"><i class="fas fa-envelope"></i>&nbsp; Me contacter – Cliquez pour déplacer</div>
+    <div class="content">
+      <form autocomplete="off">
+        <label>Prénom ou Société</label>
+        <input type="text" name="prenom" placeholder="Votre nom..." required>
+        <label>Téléphone</label>
+        <input type="text" name="numero" placeholder="+33 6 xx xx xx xx">
+        <label>Adresse Email</label>
+        <input type="email" name="email" placeholder="email@exemple.fr" required>
+        <label>Message</label>
+        <textarea name="message" rows="4" placeholder="Votre message..." required></textarea>
+        <input type="submit" value="Envoyer le message">
+      </form>
+      <button id="closePopup"><i class="fas fa-times"></i> Fermer</button>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../JS/subpage.js"></script>
+</body>
+</html>

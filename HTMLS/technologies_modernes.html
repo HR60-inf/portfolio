@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Veille Technologique – Surfaces Intelligentes Reconfigurables – Ismael RAHALI">
+  <title>RIS & 6G – Veille Technologique</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/subpage.css">
+  <style>
+    .tech-block {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 18px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .tech-block:hover {
+      border-color: var(--secondary);
+      box-shadow: 0 8px 28px rgba(0,230,118,0.2);
+    }
+    .tech-block .tech-text { flex: 1; }
+    .tech-block .tech-img {
+      flex-shrink: 0;
+      width: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .tech-block .tech-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
+    }
+    .tech-block h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--secondary);
+      margin: 1.2rem 0 0.5rem;
+    }
+    .tech-block h3:first-child { margin-top: 0; }
+    .tech-block p, .tech-block ul {
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.7;
+    }
+    .tech-block ul { padding-left: 1.2rem; }
+    .tech-block ul li { margin-bottom: 0.6rem; }
+    .ref-link {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .ref-link:hover { text-decoration: underline; color: var(--accent); }
+    /* Video play button overlay */
+    .video-wrap {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+    .video-wrap img.thumb {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+    }
+    .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      background: rgba(124,77,255,0.85);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.4rem;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.3s;
+      box-shadow: 0 4px 16px rgba(124,77,255,0.5);
+    }
+    .play-btn:hover {
+      background: var(--primary);
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+    @media(max-width:700px){
+      .tech-block { flex-direction: column; }
+      .tech-block .tech-img { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="../index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Retour au portfolio</a>
+
+  <main>
+    <div class="page-header" data-aos="fade-down">
+      <h1 class="gradient-text">Surfaces Intelligentes Reconfigurables</h1>
+      <p class="subtitle">Veille Technologique – Technologie Émergente · BTS SIO SISR</p>
+    </div>
+
+    <div class="page-banner" data-aos="fade-up">
+      <h1><i class="fas fa-satellite-dish" style="color:var(--secondary);"></i> RIS & 6G</h1>
+      <p>Dans le cadre de ma formation BTS SIO option SISR, cette veille technologique porte sur une innovation prometteuse : les <strong>Surfaces Intelligentes Reconfigurables (RIS)</strong> — une technologie clé pour les futurs réseaux <strong>6G</strong>.</p>
+      <div>
+        <span class="badge badge-green"><i class="fas fa-broadcast-tower"></i> 6G</span>
+        <span class="badge badge-primary" style="margin-left:8px;"><i class="fas fa-wifi"></i> IoT</span>
+        <span class="badge badge-accent" style="margin-left:8px;"><i class="fas fa-atom"></i> RIS</span>
+      </div>
+    </div>
+
+    <!-- Applications -->
+    <div class="tech-block" data-aos="fade-up">
+      <div class="tech-text">
+        <h3><i class="fas fa-info-circle"></i> Surfaces Intelligentes Reconfigurables (RIS)</h3>
+        <p>Les surfaces intelligentes reconfigurables sont une innovation prometteuse dans le domaine des communications sans fil et de l'Internet des Objets (IoT). Elles utilisent des matériaux avancés et des algorithmes intelligents pour manipuler les ondes électromagnétiques, permettant d'améliorer la capacité et la couverture des réseaux sans fil.</p>
+        <h3><i class="fas fa-check-double"></i> Applications et Avantages</h3>
+        <ul>
+          <li><strong>Optimisation des Réseaux Sans Fil :</strong> Les RIS peuvent transformer des murs et des surfaces ordinaires en composants intelligents d'un réseau, améliorant la fiabilité et l'efficacité de la communication radio dans des environnements complexes tels que les usines intelligentes et les réseaux de véhicules.</li>
+          <li><strong>Économie d'Énergie :</strong> En contrôlant et en redirigeant les ondes électromagnétiques de manière optimale, les RIS contribuent à une utilisation plus efficace de l'énergie dans les réseaux de communication — crucial avec l'arrivée des réseaux 6G.</li>
+          <li><strong>Déploiement Rapide :</strong> Ces surfaces peuvent être rapidement installées et reconfigurées, offrant des solutions de communication rapides dans des situations d'urgence ou dans des régions éloignées où les infrastructures traditionnelles sont absentes.</li>
+        </ul>
+      </div>
+      <div class="tech-img">
+        <img src="../imgs/RIS.png" alt="Surfaces Intelligentes Reconfigurables">
+      </div>
+    </div>
+
+    <!-- Vidéo explicative -->
+    <div class="tech-block" data-aos="fade-up">
+      <div class="tech-text">
+        <h3><i class="fas fa-play-circle"></i> Vidéo Explicative</h3>
+        <p>Pour une explication visuelle et détaillée des surfaces intelligentes reconfigurables, vous pouvez consulter cette vidéo sur les <em>"Reconfigurable Intelligent Surfaces"</em> par Rohde &amp; Schwarz (IEEE Spectrum) :</p>
+        <div class="btn-row" style="margin-top:1rem;">
+          <a href="https://scdn.rohde-schwarz.com/ur/web/video/market-segments/wireless-communications/thinksix-6g_-6g-ris-information-video-rohde-schwarz_200_66826_1080p_4.mp4" target="_blank" class="dl-btn dl-btn-primary">
+            <i class="fas fa-play"></i> Voir la Vidéo RIS
+          </a>
+        </div>
+      </div>
+      <div class="tech-img">
+        <div class="video-wrap">
+          <img src="../imgs/Video.JPG" alt="Vidéo Explicative RIS" class="thumb">
+          <a href="https://scdn.rohde-schwarz.com/ur/web/video/market-segments/wireless-communications/thinksix-6g_-6g-ris-information-video-rohde-schwarz_200_66826_1080p_4.mp4" target="_blank" class="play-btn">
+            <i class="fas fa-play"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pertinence -->
+    <div class="tech-block" data-aos="fade-up">
+      <div class="tech-text">
+        <h3><i class="fas fa-graduation-cap"></i> Pourquoi cette Technologie est Pertinente</h3>
+        <p>Dans le contexte d'une formation BTS SIO option SISR, comprendre et analyser l'impact des RIS apporte un avantage significatif. Ces technologies touchent aux domaines des réseaux informatiques, de la gestion de la sécurité de l'information et de la gestion des infrastructures — toutes des compétences clés du programme SISR.</p>
+      </div>
+      <div class="tech-img">
+        <img src="../imgs/6G__1_-removebg-preview.png" alt="6G et RIS">
+      </div>
+    </div>
+
+    <!-- Conclusion -->
+    <div class="content-card" data-aos="fade-up">
+      <h2><i class="fas fa-check-circle"></i> Conclusion</h2>
+      <p>Les surfaces intelligentes reconfigurables représentent une avancée technologique majeure avec des implications vastes pour les réseaux de communication et l'IoT. Elles permettent non seulement d'optimiser l'efficacité énergétique des infrastructures de communication, mais aussi de renforcer la sécurité des données en modulant les signaux de manière plus précise.</p>
+      <p>De plus, l'intégration de ces surfaces dans les réseaux futurs, tels que la 6G, ouvre la voie à des applications encore plus innovantes, facilitant des solutions de connectivité dans des environnements auparavant inaccessibles. Leur capacité à être rapidement déployées et reconfigurées en fait un atout précieux pour répondre aux défis des communications modernes et des infrastructures intelligentes.</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ismael RAHALI. Tous droits réservés.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100008112765174" target="_blank" class="fab fa-facebook"></a>
+      <a href="https://twitter.com/RahaliSoilihi" target="_blank" class="x-img-link"><img src="../imgs/X.png" alt="X"></a>
+      <a href="https://www.linkedin.com/in/rh188/" target="_blank" class="fab fa-linkedin"></a>
+      <a href="https://www.instagram.com/rahalismael/" target="_blank" class="fab fa-instagram"></a>
+      <a href="https://github.com/rh188" target="_blank" class="fab fa-github"></a>
+      <a class="fas fa-address-book" id="contactIcon"></a>
+    </div>
+  </footer>
+
+  <div id="formulairePopup">
+    <div class="Entete"><i class="fas fa-envelope"></i>&nbsp; Me contacter – Cliquez pour déplacer</div>
+    <div class="content">
+      <form autocomplete="off">
+        <label>Prénom ou Société</label>
+        <input type="text" name="prenom" placeholder="Votre nom..." required>
+        <label>Téléphone</label>
+        <input type="text" name="numero" placeholder="+33 6 xx xx xx xx">
+        <label>Adresse Email</label>
+        <input type="email" name="email" placeholder="email@exemple.fr" required>
+        <label>Message</label>
+        <textarea name="message" rows="4" placeholder="Votre message..." required></textarea>
+        <input type="submit" value="Envoyer le message">
+      </form>
+      <button id="closePopup"><i class="fas fa-times"></i> Fermer</button>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../JS/subpage.js"></script>
+</body>
+</html>

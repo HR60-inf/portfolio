@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prise en Main des Équipements – Alternance – Ismael RAHALI">
+  <title>Prise en Main des Équipements</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/subpage.css">
+  <style>
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+      justify-items: center;
+    }
+    .tool-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 1.2rem;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    }
+    .tool-card:hover {
+      transform: translateY(-8px) scale(1.04);
+      box-shadow: 0 10px 30px rgba(0,230,118,0.25);
+      border-color: var(--secondary);
+    }
+    .tool-card img {
+      max-width: 100px;
+      max-height: 90px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));
+      transition: transform 0.3s;
+    }
+    .tool-card:hover img { transform: scale(1.1); }
+    .tool-card p {
+      margin-top: 0.7rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--secondary);
+    }
+    @media(max-width:700px){ .tool-grid { grid-template-columns: repeat(2,1fr); } }
+  </style>
+</head>
+<body>
+
+  <a href="../index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Retour au portfolio</a>
+
+  <main>
+    <div class="page-header" data-aos="fade-down">
+      <h1 class="gradient-text">Prise en Main des Équipements</h1>
+      <p class="subtitle">Support, tickets & télémaintenance – Alternance BTS SIO · Koesio Centre Est</p>
+    </div>
+
+    <!-- 4 blocs prise en main -->
+    <div class="two-col" data-aos="fade-up">
+      <div class="content-card">
+        <h2><i class="fas fa-ticket-alt"></i> Analyse des Tickets Utilisateurs</h2>
+        <ul class="styled-list">
+          <li>Utilisation d'outils de <strong>télémaintenance</strong> : TeamViewer, AnyDesk, ConnectWise, Assistance Rapide…</li>
+          <li>Résolution de problèmes d'impression, accès réseau, logiciels métiers…</li>
+          <li>Connexion à la machine utilisateur pour résoudre directement le problème</li>
+        </ul>
+      </div>
+      <div class="content-card">
+        <h2><i class="fas fa-bell"></i> Suivi des Alertes Systèmes</h2>
+        <ul class="styled-list">
+          <li>Surveillance de l'espace disque faible sur le serveur ou des échecs de sauvegarde</li>
+          <li>Identification de la cause : fichiers temporaires, logs volumineux, sauvegardes non purgées…</li>
+          <li>Connexion au serveur ou au NAS pour analyser et traiter l'alerte</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="two-col" data-aos="fade-up">
+      <div class="content-card">
+        <h2><i class="fas fa-wrench"></i> Effectuer les Corrections Nécessaires</h2>
+        <ul class="styled-list">
+          <li>Nettoyage des données inutiles, redémarrage des services défaillants</li>
+          <li>Application des correctifs ou mises à jour système si nécessaire</li>
+          <li>Application des <strong>patchs de sécurité</strong> et mise à jour du service concerné</li>
+        </ul>
+      </div>
+      <div class="content-card">
+        <h2><i class="fas fa-chart-line"></i> Suivi & Ajustements</h2>
+        <ul class="styled-list">
+          <li>Organisation de points réguliers pour recueillir des retours utilisateurs</li>
+          <li>Ajustement des configurations en fonction des besoins identifiés</li>
+          <li>Collaboration avec les équipes pour intégrer les retours dans les processus futurs</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Outils de télémaintenance -->
+    <h2 class="section-title" data-aos="fade-up"><i class="fas fa-desktop"></i> Outils de Télémaintenance</h2>
+    <div class="tool-grid" data-aos="fade-up">
+      <div class="tool-card">
+        <img src="../imgs/Tem.png" alt="TeamViewer">
+        <p>TeamViewer</p>
+      </div>
+      <div class="tool-card">
+        <img src="../imgs/anydesk.png" alt="AnyDesk">
+        <p>AnyDesk</p>
+      </div>
+      <div class="tool-card">
+        <img src="../imgs/ConnectWise.png" alt="ConnectWise">
+        <p>ConnectWise</p>
+      </div>
+      <div class="tool-card">
+        <img src="../imgs/VPN--Photoroom.png" alt="VPN">
+        <p>VPN</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ismael RAHALI. Tous droits réservés.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100008112765174" target="_blank" class="fab fa-facebook"></a>
+      <a href="https://twitter.com/RahaliSoilihi" target="_blank" class="x-img-link"><img src="../imgs/X.png" alt="X"></a>
+      <a href="https://www.linkedin.com/in/rh188/" target="_blank" class="fab fa-linkedin"></a>
+      <a href="https://www.instagram.com/rahalismael/" target="_blank" class="fab fa-instagram"></a>
+      <a href="https://github.com/rh188" target="_blank" class="fab fa-github"></a>
+      <a class="fas fa-address-book" id="contactIcon"></a>
+    </div>
+  </footer>
+
+  <div id="formulairePopup">
+    <div class="Entete"><i class="fas fa-envelope"></i>&nbsp; Me contacter – Cliquez pour déplacer</div>
+    <div class="content">
+      <form autocomplete="off">
+        <label>Prénom ou Société</label>
+        <input type="text" name="prenom" placeholder="Votre nom..." required>
+        <label>Téléphone</label>
+        <input type="text" name="numero" placeholder="+33 6 xx xx xx xx">
+        <label>Adresse Email</label>
+        <input type="email" name="email" placeholder="email@exemple.fr" required>
+        <label>Message</label>
+        <textarea name="message" rows="4" placeholder="Votre message..." required></textarea>
+        <input type="submit" value="Envoyer le message">
+      </form>
+      <button id="closePopup"><i class="fas fa-times"></i> Fermer</button>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../JS/subpage.js"></script>
+</body>
+</html>

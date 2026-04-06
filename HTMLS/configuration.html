@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Configuration des équipements – Alternance – Ismael RAHALI">
+  <title>Configuration des équipements</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/subpage.css">
+  <style>
+    .equip-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+      justify-items: center;
+    }
+    .equip-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 1.2rem;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+      cursor: default;
+    }
+    .equip-card:hover {
+      transform: translateY(-8px) scale(1.04);
+      box-shadow: 0 10px 30px rgba(124,77,255,0.3);
+      border-color: var(--primary);
+    }
+    .equip-card img {
+      max-width: 100px;
+      max-height: 90px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
+      transition: transform 0.3s;
+    }
+    .equip-card:hover img { transform: scale(1.1); }
+    .equip-card p {
+      margin-top: 0.7rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+    @media(max-width:700px){ .equip-grid { grid-template-columns: repeat(2,1fr); } }
+  </style>
+</head>
+<body>
+
+  <a href="../index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Retour au portfolio</a>
+
+  <main>
+    <div class="page-header" data-aos="fade-down">
+      <h1 class="gradient-text">Configuration des Équipements</h1>
+      <p class="subtitle">Missions techniques – Alternance BTS SIO · Koesio Centre Est</p>
+    </div>
+
+    <!-- 4 blocs de configuration -->
+    <div class="two-col" data-aos="fade-up">
+      <div class="content-card">
+        <h2><i class="fas fa-hdd"></i> Configuration du NAS</h2>
+        <ul class="styled-list">
+          <li>Mise en place de la <strong>double authentification</strong> pour renforcer la sécurité</li>
+          <li>Configuration <strong>RAID</strong> pour assurer la redondance et la protection des données</li>
+          <li>Blocage automatique des comptes après 10 tentatives de connexion échouées</li>
+          <li>Création et gestion des <strong>dossiers partagés</strong> selon les besoins des utilisateurs</li>
+        </ul>
+      </div>
+      <div class="content-card">
+        <h2><i class="fas fa-fire-alt"></i> Configuration du Pare-feu</h2>
+        <ul class="styled-list">
+          <li>Utilisation d'un modèle par défaut avec des protocoles réseau ouverts pour un usage minimal</li>
+          <li>Configurations ajustées au cas par cas en fonction des besoins clients</li>
+          <li>Intégration d'un domaine d'authentification (SSO) si nécessaire</li>
+          <li>Configuration du <strong>filtrage web</strong> (géolocalisation, etc.) pour un contrôle d'accès précis</li>
+          <li>Mise en place et gestion des connexions <strong>VPN</strong></li>
+          <li>Configuration des réseaux <strong>WAN et LAN</strong> pour une gestion efficace du trafic</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="two-col" data-aos="fade-up">
+      <div class="content-card">
+        <h2><i class="fas fa-server"></i> Configuration Serveur & PC</h2>
+        <ul class="styled-list">
+          <li>Assemblage des composants matériels du serveur</li>
+          <li>Mise en place d'une configuration RAID pour sécuriser les disques durs</li>
+          <li>Installation et configuration de l'OS avec le rôle <strong>Hyper-V</strong></li>
+          <li>Installation de l'agent pour la supervision et la gestion à distance</li>
+          <li><em>Pour les PC :</em> Création des profils utilisateur personnalisés</li>
+          <li>Script interne pour désinstaller les logiciels indésirables</li>
+          <li>Installation des logiciels essentiels (Java, Chrome, PDFGear, 7-Zip…)</li>
+          <li>Mise en place des configurations système et installation de l'agent de gestion</li>
+        </ul>
+      </div>
+      <div class="content-card">
+        <h2><i class="fas fa-phone-alt"></i> Configuration Téléphones & Switch</h2>
+        <ul class="styled-list">
+          <li>Configuration du réseau téléphonique avec un <strong>VLAN dédié</strong></li>
+          <li>Attribution des numéros de téléphone et configuration des répertoires</li>
+          <li>Paramétrage des messages vocaux pour la gestion des appels entrants</li>
+          <li>Configuration du renvoi d'appel et des règles de priorité</li>
+          <li>Intégration des téléphones avec le standard <strong>IPBX</strong></li>
+          <li>Tests fonctionnels et validation avant déploiement final</li>
+          <li><em>Pour le Switch :</em> Configuration des VLANs (TAG/UNTAG)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Équipements utilisés -->
+    <h2 class="section-title" data-aos="fade-up"><i class="fas fa-tools"></i> Équipements utilisés</h2>
+    <div class="equip-grid" data-aos="fade-up">
+      <div class="equip-card">
+        <img src="../imgs/heading.png" alt="NAS Synology">
+        <p>NAS Synology</p>
+      </div>
+      <div class="equip-card">
+        <img src="../imgs/overview-tabletop-NV5_0.png" alt="WatchGuard">
+        <p>WatchGuard (Pare-feu)</p>
+      </div>
+      <div class="equip-card">
+        <img src="../imgs/HP.webp" alt="Serveur HP">
+        <p>Serveur HP</p>
+      </div>
+      <div class="equip-card">
+        <img src="../imgs/Yeah.png" alt="Téléphone Yealink">
+        <p>Téléphone Yealink</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ismael RAHALI. Tous droits réservés.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100008112765174" target="_blank" class="fab fa-facebook"></a>
+      <a href="https://twitter.com/RahaliSoilihi" target="_blank" class="x-img-link"><img src="../imgs/X.png" alt="X"></a>
+      <a href="https://www.linkedin.com/in/rh188/" target="_blank" class="fab fa-linkedin"></a>
+      <a href="https://www.instagram.com/rahalismael/" target="_blank" class="fab fa-instagram"></a>
+      <a href="https://github.com/rh188" target="_blank" class="fab fa-github"></a>
+      <a class="fas fa-address-book" id="contactIcon"></a>
+    </div>
+  </footer>
+
+  <div id="formulairePopup">
+    <div class="Entete"><i class="fas fa-envelope"></i>&nbsp; Me contacter – Cliquez pour déplacer</div>
+    <div class="content">
+      <form autocomplete="off">
+        <label>Prénom ou Société</label>
+        <input type="text" name="prenom" placeholder="Votre nom..." required>
+        <label>Téléphone</label>
+        <input type="text" name="numero" placeholder="+33 6 xx xx xx xx">
+        <label>Adresse Email</label>
+        <input type="email" name="email" placeholder="email@exemple.fr" required>
+        <label>Message</label>
+        <textarea name="message" rows="4" placeholder="Votre message..." required></textarea>
+        <input type="submit" value="Envoyer le message">
+      </form>
+      <button id="closePopup"><i class="fas fa-times"></i> Fermer</button>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../JS/subpage.js"></script>
+</body>
+</html>

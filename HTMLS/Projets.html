@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projets et Compte-Rendus – Ismael RAHALI">
+  <title>Projets & Compte-Rendus – Ismael RAHALI</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/subpage.css">
+  <style>
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.4rem;
+      margin-top: 1.5rem;
+    }
+    .project-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 18px;
+      padding: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 32px rgba(124,77,255,0.3);
+      border-color: var(--primary);
+    }
+    .project-card.green:hover {
+      box-shadow: 0 12px 32px rgba(0,230,118,0.3);
+      border-color: var(--secondary);
+    }
+    .project-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--secondary);
+      margin: 0;
+    }
+    .project-card.sys h3 { color: var(--accent); }
+    .project-card .proj-date {
+      font-size: 0.78rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .project-card p {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.6;
+      flex: 1;
+    }
+    @media(max-width:700px){ .projects-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <a href="../index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Retour au portfolio</a>
+
+  <main>
+    <div class="page-header" data-aos="fade-down">
+      <h1 class="gradient-text">Projets & Compte-Rendus</h1>
+      <p class="subtitle">BTS SIO SISR – Réseaux · Systèmes · Infrastructures</p>
+    </div>
+
+    <!-- Réseaux -->
+    <h2 class="section-title" data-aos="fade-up"><i class="fas fa-network-wired"></i> Réseaux</h2>
+    <div class="projects-grid" data-aos="fade-up">
+
+      <div class="project-card">
+        <h3><i class="fas fa-tree"></i> Projet WOODS</h3>
+        <p class="proj-date">Février 2024</p>
+        <p>Dans le cadre de notre première année de BTS SIO, les étudiants de deuxième année ont collaboré avec nous pour concevoir une infrastructure réseau et système moderne pour l'entreprise Wood, spécialisée dans les structures en bois. Ce projet a été présenté à l'oral devant nos professeurs du Groupe Saint-Joseph.</p>
+        <div class="btn-row">
+          <a href="../Documents/Compte-Rendu-Projet-Wood.pdf" target="_blank" class="dl-btn dl-btn-primary"><i class="fas fa-file-pdf"></i> Compte Rendu</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3><i class="fas fa-layer-group"></i> Projet PLANKS</h3>
+        <p class="proj-date">Décembre 2024</p>
+        <p>En deuxième année de BTS SIO, à notre tour nous avons collaboré avec les étudiants de première année pour concevoir une infrastructure réseau et système moderne pour l'entreprise Planks, spécialisée dans les structures en bois. Ce projet a été présenté à l'oral devant nos professeurs Réseaux et Systèmes.</p>
+        <div class="btn-row">
+          <a href="../Documents/Compte-Rendu-Projet-Planks.pdf" target="_blank" class="dl-btn dl-btn-primary"><i class="fas fa-file-pdf"></i> Compte Rendu</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3><i class="fas fa-shield-alt"></i> Configurations Réseaux</h3>
+        <p class="proj-date">2024 – 2025</p>
+        <p>Ce bloc détaille la configuration Stormshield des pages 1 à 7, mise en œuvre du protocole HSRP pour la redondance, tests de basculement, analyse des chemins réseau, et plan d'adressage optimisé pour 8 sous-réseaux. Certaines données peuvent manquer, car quelques TP ont été réalisés sur Packet Tracer.</p>
+        <div class="btn-row">
+          <a href="../Documents/Compte-Rendu-StormShield-FSHSRP-Recouvrement-Evaluation_Routage.pdf" target="_blank" class="dl-btn dl-btn-primary"><i class="fas fa-file-pdf"></i> Compte Rendu</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3><i class="fas fa-globe"></i> Configuration IPv6</h3>
+        <p class="proj-date">2024 – 2025</p>
+        <p>Cette activité consiste à configurer des adresses IPv6 sur des périphériques réseau, activer le routage et créer des VLANs. Des tests de connectivité via ping et tracert sont réalisés pour vérifier la communication. Un second TP demande la mise en place des ACLs (Access List) IPv4.</p>
+        <div class="btn-row">
+          <a href="../Documents/Compte-Rendu-Routage-InterVlanIPV6-Et-ACL_IPV4.pdf" target="_blank" class="dl-btn dl-btn-primary"><i class="fas fa-file-pdf"></i> Compte Rendu</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Systèmes -->
+    <h2 class="section-title" data-aos="fade-up" style="margin-top:3rem;"><i class="fas fa-server"></i> Systèmes</h2>
+    <div class="projects-grid" data-aos="fade-up">
+
+      <div class="project-card sys green">
+        <h3><i class="fas fa-building"></i> Projet KiDepote</h3>
+        <p class="proj-date">Avril 2024</p>
+        <p>En première année de BTS SIO, nous avons conçu un système d'information complet pour une entreprise. Ce projet incluait l'installation de machines virtuelles sous Windows et Linux, la configuration avancée du réseau avec VLANs, la rédaction de procédures techniques, ainsi qu'une présentation orale axée sur la partie Systèmes.</p>
+        <div class="btn-row">
+          <a href="../Documents/Compte-Rendu_Projet-Kdepote.pdf" target="_blank" class="dl-btn dl-btn-outline"><i class="fas fa-file-pdf"></i> Compte Rendu</a>
+        </div>
+      </div>
+
+      <div class="project-card sys green">
+        <h3><i class="fas fa-fire-alt"></i> Gestion pfSense & GPO</h3>
+        <p class="proj-date">Octobre 2023</p>
+        <p>Le but de ce TP est de maîtriser la configuration pfSense pour une gestion optimisée de la sécurité et connectivité réseau, avec la mise en place d'une redondance pour garantir la haute disponibilité. En parallèle, la création et gestion des GPO sous Windows ont montré comment uniformiser les configurations dans un environnement Active Directory.</p>
+        <div class="btn-row">
+          <a href="../Documents/Compte-rendu-PFSense-GPO.pdf" target="_blank" class="dl-btn dl-btn-outline"><i class="fas fa-file-pdf"></i> Compte Rendu</a>
+        </div>
+      </div>
+
+      <div class="project-card sys green">
+        <h3><i class="fab fa-windows"></i> Déploiement Windows 11</h3>
+        <p class="proj-date">2024 – 2025</p>
+        <p>Ce projet consiste à déployer Windows 11 à l'aide de MDT et WDS. Il inclut la création d'images système personnalisées, l'automatisation via des séquences de tâches et le déploiement par PXE, permettant d'uniformiser les installations sur toutes les machines de l'organisation sans support physique.</p>
+        <div class="btn-row">
+          <a href="../Documents/Compte-Rendu-Deploiement-Windows.pdf" target="_blank" class="dl-btn dl-btn-outline"><i class="fas fa-file-pdf"></i> Compte Rendu</a>
+        </div>
+      </div>
+
+      <div class="project-card sys green">
+        <h3><i class="fas fa-flask"></i> Mon Lab – Examen Pratique</h3>
+        <p class="proj-date">Juin 2025</p>
+        <p>Mise en place d'un portail captif sécurisé pour gérer l'accès au Wi-Fi invité et interne. Configuration d'un réseau Wi-Fi invité isolé via un VLAN dédié et installation d'un portail captif avec authentification RADIUS, intégré à pfSense (VLANs, pare-feu, CARP). Supervision avec Zabbix et documentation dans GLPI.</p>
+        <div class="btn-row">
+          <a href="../Documents/INFRASTRUCTURE.pdf" target="_blank" class="dl-btn dl-btn-outline"><i class="fas fa-file-pdf"></i> Infrastructure</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ismael RAHALI. Tous droits réservés.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100008112765174" target="_blank" class="fab fa-facebook"></a>
+      <a href="https://twitter.com/RahaliSoilihi" target="_blank" class="x-img-link"><img src="../imgs/X.png" alt="X"></a>
+      <a href="https://www.linkedin.com/in/rh188/" target="_blank" class="fab fa-linkedin"></a>
+      <a href="https://www.instagram.com/rahalismael/" target="_blank" class="fab fa-instagram"></a>
+      <a href="https://github.com/rh188" target="_blank" class="fab fa-github"></a>
+      <a class="fas fa-address-book" id="contactIcon"></a>
+    </div>
+  </footer>
+
+  <div id="formulairePopup">
+    <div class="Entete"><i class="fas fa-envelope"></i>&nbsp; Me contacter – Cliquez pour déplacer</div>
+    <div class="content">
+      <form autocomplete="off">
+        <label>Prénom ou Société</label>
+        <input type="text" name="prenom" placeholder="Votre nom..." required>
+        <label>Téléphone</label>
+        <input type="text" name="numero" placeholder="+33 6 xx xx xx xx">
+        <label>Adresse Email</label>
+        <input type="email" name="email" placeholder="email@exemple.fr" required>
+        <label>Message</label>
+        <textarea name="message" rows="4" placeholder="Votre message..." required></textarea>
+        <input type="submit" value="Envoyer le message">
+      </form>
+      <button id="closePopup"><i class="fas fa-times"></i> Fermer</button>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../JS/subpage.js"></script>
+</body>
+</html>

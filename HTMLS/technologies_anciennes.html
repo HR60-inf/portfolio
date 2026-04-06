@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Veille Technologique – IBM System/360 – Ismael RAHALI">
+  <title>IBM System/360 – Veille Technologique</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/subpage.css">
+  <style>
+    .tech-block {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 18px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .tech-block:hover {
+      border-color: var(--primary);
+      box-shadow: 0 8px 28px rgba(124,77,255,0.2);
+    }
+    .tech-block .tech-text { flex: 1; }
+    .tech-block .tech-img {
+      flex-shrink: 0;
+      width: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .tech-block .tech-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
+    }
+    .tech-block h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 1.2rem 0 0.5rem;
+    }
+    .tech-block h3:first-child { margin-top: 0; }
+    .tech-block p, .tech-block ul {
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.7;
+    }
+    .tech-block ul {
+      padding-left: 1.2rem;
+    }
+    .tech-block ul li { margin-bottom: 0.6rem; }
+    .tech-block ul li strong { color: var(--secondary); }
+    .ref-link {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .ref-link:hover { text-decoration: underline; color: var(--accent); }
+    @media(max-width:700px){
+      .tech-block { flex-direction: column; }
+      .tech-block .tech-img { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="../index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Retour au portfolio</a>
+
+  <main>
+    <div class="page-header" data-aos="fade-down">
+      <h1 class="gradient-text">IBM System/360</h1>
+      <p class="subtitle">Veille Technologique – Technologie Ancienne · BTS SIO SISR</p>
+    </div>
+
+    <div class="page-banner" data-aos="fade-up">
+      <h1><i class="fas fa-history" style="color:var(--accent);"></i> Technologie Fondatrice</h1>
+      <p>Dans le cadre de ma formation BTS SIO option SISR, il est intéressant d'explorer une technologie ancienne qui a marqué un tournant dans le domaine des systèmes informatiques. L'<strong>IBM System/360</strong>, annoncé en 1964, est l'une de ces technologies emblématiques.</p>
+      <div>
+        <span class="badge badge-accent"><i class="fas fa-calendar-alt"></i> Annoncé en 1964</span>
+        <span class="badge badge-primary" style="margin-left:8px;"><i class="fas fa-microchip"></i> Mainframe</span>
+        <span class="badge badge-green" style="margin-left:8px;"><i class="fas fa-award"></i> IBM</span>
+      </div>
+    </div>
+
+    <!-- Caractéristiques -->
+    <div class="tech-block" data-aos="fade-up">
+      <div class="tech-text">
+        <h3><i class="fas fa-star"></i> Caractéristiques et Innovations</h3>
+        <ul>
+          <li><strong>Compatibilité Ascendante :</strong> L'un des aspects révolutionnaires du System/360 était sa compatibilité ascendante. Les programmes écrits pour un modèle pouvaient fonctionner sur un modèle plus puissant sans modification, ce qui était une innovation majeure à l'époque (<a href="https://www.weforum.org/" target="_blank" class="ref-link">World Economic Forum</a>).</li>
+          <li><strong>Architecture Modulaire :</strong> L'architecture du System/360 permettait une large gamme de configurations matérielles, de la petite machine pour les petites entreprises aux grands systèmes pour les grandes organisations, rendant l'ordinateur accessible à un plus large éventail d'utilisateurs (<a href="https://www.weforum.org/" target="_blank" class="ref-link">World Economic Forum</a>).</li>
+          <li><strong>Norme de l'Industrie :</strong> Le System/360 a établi des normes pour les formats de données, les instructions machine et les interfaces périphériques, qui ont perduré pendant des décennies et ont influencé le développement de futurs systèmes (<a href="https://www.weforum.org/" target="_blank" class="ref-link">World Economic Forum</a>, <a href="https://www.startus-insights.com/" target="_blank" class="ref-link">StartUs Insights</a>).</li>
+        </ul>
+      </div>
+      <div class="tech-img">
+        <img src="../imgs/IBM_System360.jpg" alt="IBM System/360">
+      </div>
+    </div>
+
+    <!-- Impact Historique -->
+    <div class="tech-block" data-aos="fade-up">
+      <div class="tech-text">
+        <h3><i class="fas fa-landmark"></i> Impact Historique</h3>
+        <ul>
+          <li><strong>Centralisation des Données :</strong> Le System/360 a permis une centralisation efficace des données, favorisant une meilleure gestion et sécurité des informations, un aspect crucial pour les entreprises.</li>
+          <li><strong>Développement de Logiciels :</strong> Avec une base installée large et compatible, le System/360 a stimulé le développement d'une vaste gamme de logiciels d'application, contribuant à la croissance de l'industrie du logiciel.</li>
+          <li><strong>Économie et Société :</strong> En automatisant de nombreux processus administratifs et en améliorant l'efficacité opérationnelle des entreprises, le System/360 a eu un impact significatif sur l'économie et la société en général.</li>
+        </ul>
+      </div>
+      <div class="tech-img">
+        <img src="../imgs/Ordinateur-rem.png" alt="Impact Historique de l'IBM System/360">
+      </div>
+    </div>
+
+    <!-- Pertinence -->
+    <div class="tech-block" data-aos="fade-up">
+      <div class="tech-text">
+        <h3><i class="fas fa-graduation-cap"></i> Pourquoi cette Technologie est Pertinente</h3>
+        <p>Étudier l'IBM System/360 dans le cadre d'une formation BTS SIO option SISR est pertinent pour plusieurs raisons :</p>
+        <ul>
+          <li><strong>Fondation des Connaissances :</strong> Comprendre les technologies qui ont fondé les bases des systèmes modernes permet d'avoir une perspective plus complète de l'évolution des systèmes informatiques et des réseaux.</li>
+          <li><strong>Évolution des Systèmes :</strong> Analyser comment les concepts introduits par l'IBM System/360 ont évolué jusqu'aux systèmes actuels aide à mieux comprendre les défis et les solutions dans le domaine des systèmes d'information.</li>
+          <li><strong>Innovation :</strong> L'histoire de l'IBM System/360 est une leçon sur l'importance de l'innovation dans le développement technologique.</li>
+        </ul>
+      </div>
+      <div class="tech-img">
+        <img src="../imgs/Important.webp" alt="Importance de la Technologie">
+      </div>
+    </div>
+
+    <!-- Conclusion -->
+    <div class="content-card" data-aos="fade-up">
+      <h2><i class="fas fa-check-circle"></i> Conclusion</h2>
+      <p>L'IBM System/360 représente une avancée technologique majeure du passé qui a eu un impact durable sur le développement des systèmes informatiques. Ce système a posé les bases de nombreuses normes et architectures utilisées encore aujourd'hui, influençant non seulement l'industrie des mainframes, mais aussi l'ensemble de l'écosystème informatique.</p>
+      <p>En offrant une compatibilité ascendante et une modularité sans précédent à l'époque, il a permis une adoption plus large des technologies informatiques dans les entreprises de toutes tailles. De plus, l'IBM System/360 a non seulement favorisé l'essor du logiciel d'entreprise, mais a aussi jeté les bases pour l'évolution des systèmes modernes.</p>
+      <p>Pour en savoir plus, vous pouvez consulter le <a href="https://www.computerhistory.org/" target="_blank" class="ref-link">Computer History Museum</a>, <a href="https://www.startus-insights.com/" target="_blank" class="ref-link">StartUs Insights</a> et <a href="https://www.ishir.com/" target="_blank" class="ref-link">ISHIR Software Development</a>.</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ismael RAHALI. Tous droits réservés.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100008112765174" target="_blank" class="fab fa-facebook"></a>
+      <a href="https://twitter.com/RahaliSoilihi" target="_blank" class="x-img-link"><img src="../imgs/X.png" alt="X"></a>
+      <a href="https://www.linkedin.com/in/rh188/" target="_blank" class="fab fa-linkedin"></a>
+      <a href="https://www.instagram.com/rahalismael/" target="_blank" class="fab fa-instagram"></a>
+      <a href="https://github.com/rh188" target="_blank" class="fab fa-github"></a>
+      <a class="fas fa-address-book" id="contactIcon"></a>
+    </div>
+  </footer>
+
+  <div id="formulairePopup">
+    <div class="Entete"><i class="fas fa-envelope"></i>&nbsp; Me contacter – Cliquez pour déplacer</div>
+    <div class="content">
+      <form autocomplete="off">
+        <label>Prénom ou Société</label>
+        <input type="text" name="prenom" placeholder="Votre nom..." required>
+        <label>Téléphone</label>
+        <input type="text" name="numero" placeholder="+33 6 xx xx xx xx">
+        <label>Adresse Email</label>
+        <input type="email" name="email" placeholder="email@exemple.fr" required>
+        <label>Message</label>
+        <textarea name="message" rows="4" placeholder="Votre message..." required></textarea>
+        <input type="submit" value="Envoyer le message">
+      </form>
+      <button id="closePopup"><i class="fas fa-times"></i> Fermer</button>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../JS/subpage.js"></script>
+</body>
+</html>
