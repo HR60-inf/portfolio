@@ -72,7 +72,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.addEventListener('touchend',    stopDrag);
     document.addEventListener('touchcancel', stopDrag);
-    document.addEventListener('touchmove',   function (e) {
+    document.addEventListener('touchmove', function (e) {
+      if (!isDragging) return;
       const t = e.touches[0];
       moveDrag(t.clientX, t.clientY);
       e.preventDefault();
